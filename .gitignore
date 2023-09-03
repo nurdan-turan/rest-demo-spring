@@ -32,3 +32,18 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.mvn/
+mvnw
+mvnw.cmd
+```
+I have tried to add the following to the .gitignore file:
+```
+!**/src/main/**/build/
+!**/src/test/**/build/
+```
+
+```
+!**/src/main/**/target/
+!**/src/test/**/target/
+```
