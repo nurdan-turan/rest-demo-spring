@@ -36,4 +36,9 @@ public class BookingAPIService {
         this.booking = null;
         return "Booking deleted successfully";
     }
+
+    @GetMapping("/health")
+    public String health() {
+        return "Booking API is up and running";
+    }
 }
