@@ -24,4 +24,16 @@ public class BookingAPIService {
         this.booking = booking;
         return "Booking created successfully";
     }
+
+    @PutMapping
+    public String updateBooking(@RequestBody Booking booking) {
+        this.booking = booking;
+        return "Booking updated successfully";
+    }
+
+    @DeleteMapping("/{bookingId}")
+    public String deleteBooking(@PathVariable("bookingId") String bookingId) {
+        this.booking = null;
+        return "Booking deleted successfully";
+    }
 }
